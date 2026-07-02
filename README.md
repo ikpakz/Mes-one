@@ -18,3 +18,16 @@
 - `Issues + Projects` — Управление внедрением
 
 **Статус**: Активная разработка и внедрение на собственной фабрике.
+## 📁 Документация (v4.91)
+
+- [00_Full_Documentation_Set](./00_Full_Documentation_Set...) — Полный комплект
+- [01_Architecture_Diagram_v4](./01_Architecture_Diagram_v4...) — Архитектура
+- [02_Expanded_Technical_Spec](./02_Expanded_Technical_Spe...) — Расширенное ТЗ
+- [03_Integration_Matrix](./03_Integration_Matrix...) — Матрица интеграций
+- [04_Data_Exchange_Logic](./04_Data_Exchange_Logic...) — Логика обмена данными
+- [05_Glossary_ID_Dictionary](./05_Glossary_ID_Dictionary...) — Словарь ID-моделей
+- [06_Master_Data_Governance](./06_Master_Data_Governanc...) — Управление мастер-данными
+
+См. также:
+- [docs/risks-register.md](./docs/risks-register.md)
+- [architecture/diagrams.md](./architecture/diagrams.md)
