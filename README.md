@@ -1,33 +1,45 @@
 # MES One — Future Art Digital Factory
 
-**Собственная MES/MOM система** для мебельной фабрики Ильдара (КАЗПРОМ АВТОМАТИКА).
+**Собственная MES/MOM-система** для мебельной фабрики Ильдара (КАЗПРОМ АВТОМАТИКА).
 
-## Цель проекта
-Создать единую платформу с полным **traceability** (прослеживаемостью) от заказа в CRM/1C → инженерия (imos iX) → производство (HOMAG + SCM/Morbidelli) → логистика/монтаж → BI/KPI/OEE.
+## 🎯 Цель проекта
+Создать единую платформу с **полной прослеживаемостью (traceability)** от заказа в CRM/1C → инженерия (imos iX) → производство (HOMAG + SCM/Morbidelli) → логистика/монтаж → BI/KPI/OEE.
 
-## Ключевые элементы
-- **Unified ID Model**: MasterOrderID, PartID, OperationFactID, EngineeringVersionID
-- **Интеграции**: imos iX Integration Server, 1C, Homag OPC UA, Maestro Connect, woodWOP, UNS/MQTT
-- **Архитектура**: v4.91+
-- **Критические риски**: R01 (imos), R06 (1C-sync), R09 (governance)
+## 📋 Основная документация v4.91
 
-## Структура репозитория
-- `docs/` — Технические задания, спецификации
-- `architecture/` — Диаграммы (Mermaid)
-- `integrations/` — Скрипты и логика интеграций
-- `Issues + Projects` — Управление внедрением
+| Файл | Описание |
+|------|----------|
+| **[02_Expanded_Technical_Specification_v4_91_FULL_43_points_CORRECTED.pdf](./02_Expanded_Technical_Specification_v4_91_FULL_43_points_CORRECTED.pdf)** | **Основное Техническое Задание** (рабочая версия) |
+| **[00_Full_Documentation_Set](./00_Full_Documentation_Set...)** | Полный комплект документов |
+| **[03_Integration_Matrix_v4_91](./03_Integration_Matrix...)** | Матрица интеграций |
+| **[04_Data_Exchange_Logic](./04_Data_Exchange_Logic...)** | Логика обмена данными |
+| **[05_Glossary_ID_Dictionary](./05_Glossary_ID_Dictionary...)** | Словарь ID-моделей |
+| **[06_Master_Data_Governance](./06_Master_Data_Governance...)** | Управление мастер-данными |
+| **[01_Architecture_Diagram](./01_Architecture_Diagram...)** | Архитектурные диаграммы |
 
-**Статус**: Активная разработка и внедрение на собственной фабрике.
-## 📁 Документация (v4.91)
+## 🏗️ Архитектура
+- [Диаграммы и основной поток](./architecture/diagrams.md)
+- Unified ID Model: `MasterOrderID`, `PartID`, `OperationFactID`, `EngineeringVersionID`
 
-- [00_Full_Documentation_Set](./00_Full_Documentation_Set...) — Полный комплект
-- [01_Architecture_Diagram_v4](./01_Architecture_Diagram_v4...) — Архитектура
-- [02_Expanded_Technical_Spec](./02_Expanded_Technical_Spe...) — Расширенное ТЗ
-- [03_Integration_Matrix](./03_Integration_Matrix...) — Матрица интеграций
-- [04_Data_Exchange_Logic](./04_Data_Exchange_Logic...) — Логика обмена данными
-- [05_Glossary_ID_Dictionary](./05_Glossary_ID_Dictionary...) — Словарь ID-моделей
-- [06_Master_Data_Governance](./06_Master_Data_Governanc...) — Управление мастер-данными
+## ⚠️ Критические риски
+- [Реестр рисков](./docs/risks-register.md) (R01, R06, R09 и др.)
 
-См. также:
-- [docs/risks-register.md](./docs/risks-register.md)
-- [architecture/diagrams.md](./architecture/diagrams.md)
+## 🔧 Ключевые интеграции
+- imos iX (Integration Server + CAD/CAM)
+- 1C: Комплексная автоматизация
+- HOMAG (OPC UA, STORETEQ, CENTATEQ, EDGETEQ и др.)
+- SCM/Morbidelli (Maestro Connect)
+- woodWOP, Cut Rite, woodStore
+
+## 📍 Текущий статус
+- Активное внедрение на собственной мебельной фабрике
+- Ведётся пилотный этап (traceability skeleton)
+- Архитектура v4.91+
+
+---
+
+**Репозиторий** предназначен для хранения всей документации, архитектуры, рисков и кода по проекту MES One.
+
+---
+
+*Последнее обновление: Июль 2026*
